@@ -16,4 +16,4 @@ I am creating a MERN stack website using React for the frontend, Express.js for 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username/repo_name.git
+   git@github.com:SomayPawa/mern_project.git
