@@ -14,6 +14,3 @@ I am creating a MERN stack website using React for the frontend, Express.js for 
 
 ## Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your_username/repo_name.git
