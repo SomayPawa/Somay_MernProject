@@ -389,44 +389,180 @@ a.active {
 ** services section css
 ** -------------------------  */
 
-.section-services {
-  & .container:first-child {
-    padding: 0;
-  }
-  & .grid-three-cols {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3.2rem;
-  }
+/* Service Section */
+main {
+  padding: 2rem;
+}
 
-  & .card {
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-    border: 0.2rem solid var(--helper-color);
+nav {
+  background-color: var(--bg-color);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    & .card-img {
-      text-align: center;
-      & img {
-        width: 70%;
-        height: auto;
-        filter: drop-shadow(0 0 2rem 2rem #fff);
-        -webkit-filter: drop-shadow(0 0 2rem 2rem #fff);
-      }
-    }
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
 
-    & .card-details {
-      padding: 2.4rem;
+.mode {
+  display: flex;
+  align-items: center;
+}
 
-      & .grid p {
-        font-size: 1.4rem;
-      }
+.light {
+  margin-right: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #646cff;
+}
 
-      & h2 {
-        font-size: 3.2rem;
-        margin: 1.2rem 0 2.4rem 0;
-      }
-    }
-  }
+.modechange {
+  cursor: pointer;
+}
+
+.search {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.query {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #ccc;
+  padding-right: 1rem;
+}
+
+.query img {
+  margin-right: 1rem;
+}
+
+.searchinput {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.submit {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  background-color: #646cff;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #4d4dff;
+}
+
+.profile {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.up {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#pfp {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 2rem;
+}
+
+.about {
+  flex: 1;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#username {
+  color: #646cff;
+  font-weight: bold;
+}
+
+.gitstats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.gitstats h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gitlinks {
+  display: flex;
+  align-items: center;
+}
+
+.gitlinks img {
+  margin-right: 1rem;
+}
+
+.gitlinks p {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Dark Theme */
+.dark nav {
+  background-color: #1a1a1a;
+}
+
+.dark .search {
+  background-color: #1a1a1a;
+}
+
+.dark .query {
+  border-right: 1px solid #333;
+}
+
+.dark .submit {
+  background-color: #646cff;
+}
+
+.dark .submit:hover {
+  background-color: #4d4dff;
+}
+
+.dark .profile {
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
 /** -----------------------
